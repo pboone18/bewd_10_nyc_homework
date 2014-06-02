@@ -5,21 +5,19 @@
 # Must be object oriented. You must instantiate modeled classes. The only file that can run without classes is your runner.
 # Push code on Github.
 
+###################################################
 #Get user to input a value and check for validity
-#Create Fruit lib and require_relative link
+#Create lib and require_relative link
 
 # require_relative 'mashable4'
 require_relative 'run'
-# require_relative 'person'
-
-# puts "Hello! This application will show you all current articles on Mashable by selected Category. \n"
-# puts "Select a Category: Lifestyle, Entertainment or Tech"
+require_relative 'person'
 
 # put code here ask the user for their name, and save it
-# puts "What is your name?"
-# person = Person.new(gets.strip)
+puts "What is your name?"
+person = Person.new(gets.strip)
 
-# put code here to create a new game, and start it
-# run = Run.new(person).play
-run = Run.new
-run.play
+
+game = Run.new(person).play
+# run.play
+# game.play
