@@ -39,7 +39,7 @@ class Run
   end   
 
   def play
-    puts "Welcome! Please select either Mashable or Digg for the latest articles on each news site:"
+    puts "Welcome #{@person.name.capitalize}! Please select either Mashable or Digg for the latest articles on each news site:"
       # 3.downto(1) do |guess|
         reader = gets.strip
         # get_input
